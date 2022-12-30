@@ -1,8 +1,14 @@
+package br.com.alura.teste
+
+import br.com.alura.modelo.Cliente
+import br.com.alura.modelo.ContaCorrente
+import br.com.alura.modelo.ContaPoupanca
+
 fun testaComportamentosConta() {
-    val contaAlex = ContaCorrente(titular = "Alex", numero = 1000)
+    val contaAlex = ContaCorrente(titular = Cliente(nome = "Alex", cpf = "332.323223.232", senha = 3123), numero = 1000)
     contaAlex.deposita(200.0)
 
-    val contaFran = ContaPoupanca(numero = 1001, titular = "Fran")
+    val contaFran = ContaPoupanca(numero = 1001, titular = Cliente(nome = "Francisco", cpf = "00.000.000", senha = 323333))
     contaFran.deposita(300.0)
 
     println(contaFran.titular)

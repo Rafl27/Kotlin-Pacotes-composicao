@@ -1,3 +1,10 @@
+package br.com.alura.teste
+
+import br.com.alura.modelo.Analista
+import br.com.alura.modelo.CalculadoraBonificacao
+import br.com.alura.modelo.Diretor
+import br.com.alura.modelo.Gerente
+
 fun testaFuncionarios() {
     val alex = Analista(
         nome = "Alex",

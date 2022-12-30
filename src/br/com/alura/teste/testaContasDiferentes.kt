@@ -1,10 +1,18 @@
+package br.com.alura.teste
+
+import br.com.alura.modelo.Cliente
+import br.com.alura.modelo.ContaCorrente
+import br.com.alura.modelo.ContaPoupanca
+import br.com.alura.modelo.Endereco
+
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = "Alex",
+        titular = Cliente(nome = "camarada", cpf = "32.323.2.2.23", senha = 324324, endereco = Endereco(logradouro = "rua crisis")),
         numero = 1000
     )
+    println("printando logradouro: "+contaCorrente.titular.endereco.logradouro)
     val contaPoupanca = ContaPoupanca(
-        titular = "Fran",
+        titular = Cliente(nome = "poupaDude", cpf = "432.24.23.4", senha = 3233),
         numero = 1001
     )
 

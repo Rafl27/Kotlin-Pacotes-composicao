@@ -1,3 +1,7 @@
+package br.com.alura.teste
+
+import br.com.alura.modelo.*
+
 fun testaAutenticacao() {
     val gerente = Gerente(
         nome = "Alex",
@@ -17,6 +21,7 @@ fun testaAutenticacao() {
         cpf = "333.333.333-33",
         senha = 1234
     )
+    val clienteComEndereco = Cliente(nome = "osvaldo", cpf = "3232.3.323.32", senha = 432442)
 
     val sistema = SistemaInterno()
     sistema.entra(gerente, 1000)
